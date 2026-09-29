@@ -81,8 +81,10 @@ const REVENUE_ROUTER = "0xeEc171B409788644acBf1c50B825Cc6d9682D9b7";
 // - the current one:
 //   https://robinhoodchain.blockscout.com/address/0xad7ca6bf8c0ab7793eBEC811Da5F54304383669A
 const OUTBID_MARKETS = ["0x1Eaca99186F58A258B08fd7A25524A20c31def63", "0xad7ca6bf8c0ab7793eBEC811Da5F54304383669A"];
-// The trade router, which takes the site's trading fee (SwapExecutor.sol in the contracts repo above):
+// The trade router, which takes the site's trading fee: TradeRouter#TradeRouter in DEPLOYMENTS.md
+// above, a deployment of contracts/SwapExecutor.sol there, whose source is verified at
 // https://robinhoodchain.blockscout.com/address/0x5cFE31511A01161136171309881a6820E6a647f7
+// It is not the outbid market's own SwapExecutor (0x4Db20d13…), which charges no fee.
 const TRADE_ROUTER = "0x5cFE31511A01161136171309881a6820E6a647f7";
 // How RevenueRouter's RevenueReceived names native ETH.
 const ETHER = "0x0000000000000000000000000000000000000000";
